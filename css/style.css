@@ -55,18 +55,6 @@ html {
   box-sizing: inherit;
 }
 
-
-
-/* .catalog-menu,
-.site-navigation a {
-  font-size: 18px;
-  line-height: 24px;
-  font-family: gilroyextrabold;
-  color: #000000;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-} */
-
 .user-navigation a {
   color: #000000;
 }
@@ -76,7 +64,6 @@ html {
 .wrapper {
   width: 1160px;
   margin: 0 auto;
-  /* box-shadow: 0 0 0 3px blue; */
 }
 
 .visually-hidden {
@@ -391,12 +378,13 @@ site-navigation {
 }
 
 .product-info-button {
-  display: block;
+  /* display: block; */
   margin-bottom: 47px;
   margin-right: 175px;
 }
 
 .button {
+  display: block;
   font-size: 18px;
   line-height: 40px;
   width: 220px;
@@ -407,6 +395,7 @@ site-navigation {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3.5px;
+  /* box-shadow: 0 0 0 3px red; */
   background: linear-gradient(
     to bottom,
     transparent 16px,
@@ -517,6 +506,7 @@ td:nth-child(2) {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 63px;
 }
 
 .item-image {
@@ -563,4 +553,57 @@ td:nth-child(2) {
 .catalog-item:nth-child(6) .item-image {
   background: url("../img/popular-6.svg") no-repeat 12px 50px,
   #f8e296;
+  /* background-color: #f8e296;
+  background-image: url("../img/popular-6.svg");
+  background-repeat: no-repeat;
+  background-position: 12px 50px; */
+}
+
+.catalog-item:hover .item-image {
+  background-color: #f0c52e;
+}
+
+.catalog-item:active {
+  opacity: 0.5;
+}
+
+/*------------------------------ features ------------------------------ */
+
+.features {
+  /* background-color: #e5e5e5; */
+  min-height: 388px;
+  background: linear-gradient(#ffffff 100px, #e5e5e5 100px);
+  padding-top: 80px;
+
+}
+
+.features .wrapper {
+  display: flex;
+}
+
+.features-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+}
+
+.feature-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 760px;
+}
+
+.feature {
+  display: none;
+}
+
+.feature-1 {
+  display: block;
+}
+
+.feature-item .button {
+  width: 160px;
+  margin-bottom: 25px;;
 }
