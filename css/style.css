@@ -1,0 +1,130 @@
+@font-face {
+  font-weight: normal;
+  font-family: "gilroyextrabold";
+  font-style: normal;
+
+  src: url("../fonts/gilroyextrabold-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "gilroylight";
+  font-style: normal;
+
+  src: url("../fonts/gilroylight-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "open_sanslight";
+  font-style: normal;
+
+  src: url("../fonts/opensans-light-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "open_sansregular";
+  font-style: normal;
+
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-size: 15px;
+  line-height: 30px;
+  font-family: open_sanslight;
+  color: #000000;
+  letter-spacing: 0.15px;
+
+  background-color: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.logo-title {
+  font-size: 48px;
+  line-height: 48px;
+  font-family: gilroyextrabold;
+  letter-spacing: 0.26px;
+}
+
+.catalog-menu,
+.site-navigation a {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: gilroyextrabold;
+  color: #000000;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.user-navigation a {
+  color: #000000;
+}
+
+/*------------------------------ common styles ------------------------------ */
+
+.wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  /* box-shadow: 0 0 0 3px blue; */
+}
+
+
+/*------------------------------ header ------------------------------ */
+
+.main-header .wrapper {
+  /* box-shadow: 0 0 0 3px greenyellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background: linear-gradient(#ffffff 40px, #f7e296 40px);
+  min-height: 210px;
+}
+
+.main-navigation {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.main-navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.header-columns {
+  /* box-shadow: 0 0 0 3px red; */
+  width: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu-header {
+  display: none;
+}
