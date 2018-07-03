@@ -342,10 +342,6 @@ site-navigation {
   padding-top: 18px;
 }
 
-.product-photo img {
-  /* box-shadow: 0 0 0 3px red; */
-}
-
 .product-block {
   width: 500px;
   padding-top: 51px;
@@ -358,14 +354,10 @@ site-navigation {
   font-family: gilroyextrabold;
   letter-spacing: 0.8px;
   margin-bottom: 18px;
-  width: 415px;
+  width: 500px;
   z-index: 10;
 }
 
-.slider-3 .product-promo-title {
-  width: 510px;
-  position: relative;
-}
 
 
 .product-number {
