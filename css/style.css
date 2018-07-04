@@ -553,10 +553,6 @@ td:nth-child(2) {
 .catalog-item:nth-child(6) .item-image {
   background: url("../img/popular-6.svg") no-repeat 12px 50px,
   #f8e296;
-  /* background-color: #f8e296;
-  background-image: url("../img/popular-6.svg");
-  background-repeat: no-repeat;
-  background-position: 12px 50px; */
 }
 
 .catalog-item:hover .item-image {
@@ -570,10 +566,14 @@ td:nth-child(2) {
 /*------------------------------ features ------------------------------ */
 
 .features {
-  /* background-color: #e5e5e5; */
-  min-height: 388px;
+  min-height: 278px;
   background: linear-gradient(#ffffff 100px, #e5e5e5 100px);
-  padding-top: 80px;
+  /* padding-top: 80px; */
+  /* box-shadow: 0 0 0 3px red; */
+  position: relative;
+}
+
+.features::after {
 
 }
 
@@ -585,25 +585,113 @@ td:nth-child(2) {
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 300px;
+  padding-top: 80px;
+  padding-bottom: 44px;
+  width: 284px;
+  position: relative;
+  /* box-shadow: 0 0 0 3px green; */
+  border-right: 7px solid black; 
 }
 
 .feature-list {
+  /* box-shadow: 0 0 0 3px green;  */
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-top: 75px;
   width: 760px;
+  position: relative;
 }
 
 .feature {
   display: none;
+  position: relative;
 }
 
-.feature-1 {
-  display: block;
+.features-list li {
+  width: 278px;
 }
 
 .feature-item .button {
   width: 160px;
-  margin-bottom: 25px;;
+  margin-bottom: 25px;
+}
+
+.feature-item:active,
+.feature-item:active .button {
+  background: #000000;
+  color: #f7e184;
+}
+
+#feature-1:checked ~ ul .feature-item:nth-child(1),
+#feature-1:checked ~ ul .button-1 {
+  background: #000000;
+  color: #f7e184;
+}
+
+#feature-2:checked ~ ul .feature-item:nth-child(2),
+#feature-2:checked ~ ul .button-2 {
+  background: #000000;
+  color: #f7e184;
+}
+
+#feature-3:checked ~ ul .feature-item:nth-child(3),
+#feature-3:checked ~ ul .button-3 {
+  background: #000000;
+  color: #f7e184;
+}
+
+#feature-1:checked ~ ul .feature-1 {
+  display: block;
+}
+
+#feature-2:checked ~ ul .feature-2 {
+  display: block;
+}
+
+#feature-3:checked ~ ul .feature-3 {
+  display: block;
+}
+
+.feature-list {
+  padding-left: 116px;;
+}
+
+.feature-title {
+  font-size: 47px;
+  line-height: 48px;
+  font-family: gilroyextrabold;
+  color: #000000;
+  letter-spacing: 1.21px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.feature-description {
+  width: 446px;
+  letter-spacing: 0.3px;
+}
+
+.feature::after {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 200px;
+  /* box-shadow: 0 0 0 3px green; */
+  background-color: red;
+  top: -20px;
+  right: -85px;
+}
+
+.feature-1::after {
+  background: url("../img/delivery.svg") no-repeat 29px 30px;
+}
+
+.feature-2::after {
+  background: url("../img/warranty.svg") no-repeat 10px 5px;
+}
+
+.feature-3::after {
+  background: url("../img/credit.svg") no-repeat 10px 10px;
 }
