@@ -163,6 +163,7 @@ html {
   padding-top: 65px;
   top: 62px;
   left: -60px;
+  z-index: 15;
 }
 
 .main-catalog-menu {
@@ -174,7 +175,7 @@ html {
   padding-left: 60px;
   display: flex;
   background-color: #f8e296;
-  z-index: 5;
+  
 }
 
 .catalog-menu {
@@ -263,7 +264,7 @@ html {
   display: flex;
 }
 
-site-navigation {
+.site-navigation {
   display: flex;
   justify-content: flex-end;
 }
