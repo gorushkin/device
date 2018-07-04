@@ -706,4 +706,93 @@ td:nth-child(2) {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+/*------------------------------ information-section ------------------------------ */
+
+/*---------- about-us ---------- */
+
+.information {
+  display: flex;
+}
+
+.information-title {
+  font-size: 47px;
+  line-height: 48px;
+  font-family: gilroyextrabold;
+  color: #000000;
+  letter-spacing: 0.1px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.information-title::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 7px;
+  background-color: #000000;
+  left: 0;
+  top: -54px;
+}
+
+.information-text {
+  color: #464646;
+  margin: 0;
+  padding: 0;  
+}
+
+.about-us {
+  width: 600px;
+}
+
+.contacts {
+  width: 558px;
+}
+
+.about-us .information-text {
+  width: 490px;
+  margin-bottom: 30px;
+  /* box-shadow: 0 0 0 3px green; */
+}
+
+.delivery-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;  
+  margin-top: 67px;
+  margin-left: 35px;
+  margin-bottom: 55px;
+}
+
+.delivery-item {
+  font-size: 16px;
+  line-height: 40px;
+  font-family: gilroyextrabold;
+  color: #000000;
+  letter-spacing: 0.21px;
+}
+
+.information .button {
+  width: 260px;
+}
+
+.contacts .information-text {
+  margin-bottom: 40px;
+}
+
+.map {
+  margin-bottom: 70px;
+  overflow: hidden;
+  width: 560px;
+  height: 222px;
+}
+
+.map iframe {
+  z-index: 5;
+  /* margin: auto; */
+  display: block;
 }
