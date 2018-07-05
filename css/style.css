@@ -748,6 +748,7 @@ td:nth-child(2) {
 
 .about-us {
   width: 600px;
+  /* box-shadow: 0 0 0 3px green; */
 }
 
 .contacts {
@@ -797,3 +798,46 @@ td:nth-child(2) {
   /* margin: auto; */
   display: block;
 }
+
+.information .button {
+  margin-bottom: 81px;
+}
+
+/*------------------------------ main-footer ------------------------------ */
+
+.main-footer {
+  background-color: #464646;
+  padding-top: 60px;
+  color: #ffffff;
+  min-height: 323px;
+}
+
+.main-footer .wrapper {
+  display: flex;
+}
+
+.footer-column {
+  box-shadow: 0 0 0 3px green;
+}
+
+/*---------- footer-column-1 ---------- */
+
+.main-footer .logo-title {
+  color: #ffc600;
+  margin-bottom: 22px;
+  position: relative;
+}
+
+.main-footer .logo-title::after {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 7px;
+  background-color: #ffc600;
+  left: 2px;
+  bottom: -136px;
+}
+
+/*---------- footer-column-2 ---------- */
+
+/*---------- footer-column-3 ---------- */
