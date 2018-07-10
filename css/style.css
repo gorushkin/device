@@ -121,10 +121,12 @@ html {
 
 .left-column {
   position: relative;
+  box-shadow: 0 0 0 3px green;
 }
 
 .search-form {
   position: relative;
+  box-shadow: 0 0 0 3px red;
 }
 
 .search {
@@ -132,9 +134,24 @@ html {
   background-color: #f7e296;
   border: none;
   position: relative;
+  padding-left: 40px;
+  background: url("../img/search.svg") no-repeat 3px 2px;  
 }
 
-.search-form-button {
+
+
+
+/* .search::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url("../img/search.svg") no-repeat 4px 1px;
+  top: 0;
+  left: 0;
+} */
+
+/* .search-form-button {
   width: 20px;
   height: 20px;
   background-color: #f7e296;
@@ -142,7 +159,7 @@ html {
   vertical-align: middle;
   background: url("../img/search.svg") no-repeat 4px 1px;
   margin-right: 15px;
-}
+} */
 
 .catalog-menu-title {
   font-size: 18px;
