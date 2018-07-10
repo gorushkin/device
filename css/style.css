@@ -139,6 +139,7 @@ html {
   height: 49px;
   border: 2px solid #000000;
   background-color: #f7e296;
+  opacity: 0;
 }
 
 /*---------- header-line-1_column-right ---------- */
@@ -220,29 +221,32 @@ html {
   display: none;
   position: absolute;
   padding-top: 65px;
-  top: -10px;
+  top: -8px;
   left: 0px;
   z-index: 15;
-  box-shadow: 0 0 0 3px red;
+  /* box-shadow: 0 0 0 3px red; */
 }
 
 .main-catalog-menu {
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 1100px;
   min-height: 129px;
-  padding-left: 60px;
+  /* padding-left: 60px; */
   display: flex;
+  justify-content: flex-start;
   background-color: #f8e296;
-  box-shadow: 0 0 0 3px blue;
+  /* box-shadow: 0 0 0 3px blue; */
 }
 
 .catalog-menu {
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 200px;
+  /* width: 200px; */
+  margin-right: 60px;
+  /* box-shadow: 0 0 0 3px red; */
 }
 
 .main-catalog-menu a { 
