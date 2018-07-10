@@ -109,6 +109,14 @@ html {
   color: #000000;
 }
 
+.logo-title:hover {
+  opacity: 0.6;
+}
+
+.logo-title:active {
+  opacity: 0.3;
+}
+
 /*---------- left-column ---------- */
 
 .left-column {
@@ -812,32 +820,100 @@ td:nth-child(2) {
   min-height: 323px;
 }
 
+.main-footer a {
+  color: #ffffff;
+}
+
 .main-footer .wrapper {
   display: flex;
+  flex-direction: column;
 }
 
-.footer-column {
-  box-shadow: 0 0 0 3px green;
+.footer-line {
+  /* box-shadow: 0 0 0 3px green; */
 }
 
-/*---------- footer-column-1 ---------- */
+/*---------- footer-line-1 ---------- */
 
 .main-footer .logo-title {
   color: #ffc600;
-  margin-bottom: 22px;
-  position: relative;
 }
 
-.main-footer .logo-title::after {
-  position: absolute;
-  content: "";
-  width: 80px;
-  height: 7px;
-  background-color: #ffc600;
-  left: 2px;
-  bottom: -136px;
+.main-footer .line-1 {
+  display: flex;
+  justify-content: space-between;
+
 }
 
-/*---------- footer-column-2 ---------- */
+.footer-user-navigation {
+  /* box-shadow: 0 0 0 3px green; */
+  padding-top: 3px;
+}
 
-/*---------- footer-column-3 ---------- */
+.footer-user-navigation li:first-child {
+  padding-right: 5px;
+  position: relative;  
+}
+
+/*---------- footer-line-2 ---------- */
+
+.line-2 {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.line-2 p {
+  margin: 0;
+  padding: 0;
+}
+
+
+.line-2 > li:first-child,
+.line-2 > li:last-child {
+  width: 210px;
+}
+
+.line-2 > li:last-child {
+  text-align: right;
+}
+
+.footer-site-navigation {
+  padding-top: 4px;
+  margin-bottom: 59px;
+}
+
+/*---------- footer-line-3 ---------- */
+.line-3 {
+  width: 100%;
+  /* box-shadow: 0 0 0 3px red; */
+  display: flex;
+  padding-left: 30px;
+}
+
+.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 1px;
+  display: flex;
+  width: 140px;
+  justify-content: space-between;
+  /* box-shadow: 0 0 0 3px green; */
+  margin: 0 auto;
+}
+
+.social-button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  /* background: red;   */
+}
+
+.htmlacademylogo {
+  /* margin-top: -5px; */
+  /* paddimg-top: 5px; */
+  width: 30px;
+}
