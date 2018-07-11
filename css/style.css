@@ -176,13 +176,6 @@ html {
   opacity: 1;
 }
 
-
-
-
-/* .search-input:focus + .search-form-button {
-  opacity: 1;
-} */
-
 /*---------- header-line-1_column-right ---------- */
 
 .user-navigation {
@@ -232,19 +225,27 @@ html {
 
 .header-line-2 .header-column-left {
   position: relative;
-  /* box-shadow: 0 0 0 3px red; */
-  /* background: #000; */
+  line-height: 24px;
 }
 
 .catalog-menu-title {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 20px;
   font-family: gilroyextrabold;
   color: #000000;
   margin: 0;
+  padding: 0;
   letter-spacing: 3.6px;
   text-transform: uppercase;
   position: relative;
+}
+
+.catalog-menu-title:hover {
+  opacity: 0.5;
+}
+
+.catalog-menu-title:active {
+  opacity: 0.3;
 }
 
 .catalog-menu-title::after {
@@ -253,19 +254,9 @@ html {
   width: 16px;
   height: 16px;
   background: url("../img/plus.svg");
-  top: 3px;
-  right: 253px;
+  top: 1px;
+  right: -28px;
   opacity: 0.3;
-}
-
-.menu-header {
-  display: none;
-  position: absolute;
-  padding-top: 65px;
-  top: -8px;
-  left: 0px;
-  z-index: 15;
-  /* box-shadow: 0 0 0 3px red; */
 }
 
 .main-catalog-menu {
@@ -274,20 +265,21 @@ html {
   padding: 0;
   width: 1100px;
   min-height: 129px;
-  /* padding-left: 60px; */
   display: flex;
   justify-content: flex-start;
   background-color: #f8e296;
-  /* box-shadow: 0 0 0 3px blue; */
+  display: none;
+  position: absolute;
+  padding-top: 54px;
+  left: 0px;
+  z-index: 15;
 }
 
 .catalog-menu {
   list-style: none;
   margin: 0;
   padding: 0;
-  /* width: 200px; */
   margin-right: 60px;
-  /* box-shadow: 0 0 0 3px red; */
 }
 
 .main-catalog-menu a { 
@@ -299,8 +291,17 @@ html {
   letter-spacing: 0.15px;
 }
 
-.menu-header:hover,
-.catalog-menu-title:hover + .menu-header {
+.main-catalog-menu a:hover {
+  opacity: 0.6;
+}
+
+.main-catalog-menu a:active {
+  opacity: 0.3;
+}
+
+.main-catalog-menu:hover,
+.catalog-menu-title:active + .main-catalog-menu,
+.catalog-menu-title:hover + .main-catalog-menu {
   display: flex;
 }
 
@@ -313,6 +314,14 @@ html {
   color: #000000;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+}
+
+.site-navigation a:hover {
+  opacity: 0.5;
+}
+
+.site-navigation a:active {
+  opacity: 0.3;
 }
 
 .site-navigation {
@@ -343,6 +352,8 @@ html {
 .product-slider {
   min-height: 610px;
   background: linear-gradient(#f8e296 129px, #ffffff 129px);
+  /* background: linear-gradient(#000000 129px, #ffffff 129px); */
+
   position: relative;
 }
 
