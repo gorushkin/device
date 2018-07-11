@@ -1013,3 +1013,37 @@ td:nth-child(2) {
 .htmlacademylogo:active {
   opacity: 0.3;
 }
+
+.catalog-columns {
+  width: 100%;
+  height: 500px;
+  background-color: grey;
+  display: flex;
+}
+
+.catalog-column {
+  height: 100%;
+  flex-grow: 1;
+}
+
+.filters {
+  background-color: green;
+  flex-basis: 330px;
+}
+
+.catalog {
+  background-color: blue;
+  flex-basis: 830px;
+}
+
+/* .filters-column {
+  width: 330px;
+  margin-left: auto;
+  background-color: grey;
+} */
+
+/* .catalog-column {
+  width: 830px;
+  margin-right: auto;
+  background-color: grey;
+} */
