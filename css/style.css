@@ -209,6 +209,7 @@ html {
   left: -25px;
 }
 
+
 .login::before {
   background: url("../img/user.svg") no-repeat 50% 50%;
 }
@@ -219,6 +220,16 @@ html {
 
 .cart::before {
   background: url("../img/cart.svg") no-repeat 50% 50%;
+}
+
+.user-navigation a:hover,
+.user-navigation a:hover::before {
+  opacity: 0.6;
+}
+
+.user-navigation a:active,
+.user-navigation a:active::before {
+  opacity: 0.3;
 }
 
 /*---------- header-line-2_column-left ---------- */
@@ -884,16 +895,26 @@ td:nth-child(2) {
 
 .main-footer .logo-title {
   color: #ffc600;
+  position: relative;
+}
+
+.main-footer .logo-title::after {
+  position: absolute;
+  content: "";
+  top: 177px;
+  left: 2px;
+  width: 80px;
+  height: 7px;
+  background-color: #ffc600;
 }
 
 .main-footer .line-1 {
   display: flex;
   justify-content: space-between;
-
+  margin-bottom: 12px;
 }
 
 .footer-user-navigation {
-  /* box-shadow: 0 0 0 3px green; */
   padding-top: 3px;
 }
 
@@ -901,6 +922,20 @@ td:nth-child(2) {
   padding-right: 5px;
   position: relative;  
 }
+
+.main-footer .login::before {
+  background: url("../img/user_footer.svg") no-repeat 50% 50%;
+}
+
+.main-footer .compare::before {
+  background: url("../img/compare_footer.svg") no-repeat 50% 50%;
+}
+
+.main-footer .cart::before {
+  background: url("../img/cart_footer.svg") no-repeat 50% 50%;
+}
+
+
 
 /*---------- footer-line-2 ---------- */
 
@@ -910,6 +945,7 @@ td:nth-child(2) {
   padding: 0;
   list-style: none;
   justify-content: space-between;
+  margin-bottom: 5px;
 }
 
 .line-2 p {
@@ -933,9 +969,9 @@ td:nth-child(2) {
 }
 
 /*---------- footer-line-3 ---------- */
+
 .line-3 {
   width: 100%;
-  /* box-shadow: 0 0 0 3px red; */
   display: flex;
   padding-left: 30px;
 }
@@ -948,7 +984,6 @@ td:nth-child(2) {
   display: flex;
   width: 140px;
   justify-content: space-between;
-  /* box-shadow: 0 0 0 3px green; */
   margin: 0 auto;
 }
 
@@ -956,11 +991,25 @@ td:nth-child(2) {
   width: 32px;
   height: 32px;
   display: flex;
-  /* background: red;   */
+  opacity: 0.3;
+}
+
+.social-button:hover {
+  opacity: 0.6;
+}
+
+.social-button:active {
+  opacity: 0.1;
 }
 
 .htmlacademylogo {
-  /* margin-top: -5px; */
-  /* paddimg-top: 5px; */
   width: 30px;
+}
+
+.htmlacademylogo:hover {
+  opacity: 0.6;
+}
+
+.htmlacademylogo:active {
+  opacity: 0.3;
 }
