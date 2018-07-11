@@ -1019,6 +1019,7 @@ td:nth-child(2) {
   height: 500px;
   background-color: grey;
   display: flex;
+  min-width: 1160px;
 }
 
 .catalog-column {
@@ -1036,14 +1037,16 @@ td:nth-child(2) {
   flex-basis: 830px;
 }
 
-/* .filters-column {
+.catalog-left {
   width: 330px;
+  height: 100%;
   margin-left: auto;
   background-color: grey;
-} */
+}
 
-/* .catalog-column {
+.catalog-right {
   width: 830px;
+  height: 100%;
   margin-right: auto;
   background-color: grey;
-} */
+}
