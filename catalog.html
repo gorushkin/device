@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <title>Device - Catalog</title>
 </head>
 <body>
@@ -77,13 +77,66 @@
 		  <section class="filters catalog-column">
 		    <div class="catalog-left">
 		    	<h3 class="columns-title">Фильтр:</h3>
-					<form class="filter" action="https://echo.htmlacademy.ru" method="get">						
+          <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="price">
+              <legend class="price-title filter-title">Стоимость</legend>
+            </fieldset>
+            <fieldset class="color-block">
+              <legend class="color-block-title filter-title"></legend>
+              <ul class="filter-option-list">
+                <li class="filter-option-item">
+                  <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="color" id="black">
+                  <label for="black">Черный</label>
+                </li>
+                <li class="filter-option-item">
+                  <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="color" id="white">
+                  <label for="white">Белый</label>
+                </li>
+                <li class="filter-option-item">
+                  <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="color" id="blue">
+                  <label for="blue">Синий</label>
+                </li>
+                <li class="filter-option-item">
+                  <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="color" id="red">
+                  <label for="red">Красный</label>
+                </li>
+                <li class="filter-option-item">
+                  <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="color" id="pink">
+                  <label for="pink">Розовый</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="bluetooth">
+                <legend class="bluetooth-block-title filter-title">Bluetooth</legend>
+                <ul class="filter-option-list">
+                  <li class="filter-option-item">
+                    <input type="radio" class="visually-hidden filter-input filter-input-radio" name="bluetooth" id="bluetooth-yes">
+                    <label for="bluetooth-yes">Есть</label>
+                  </li>
+                  <li class="filter-option-item">
+                    <input type="radio" class="visually-hidden filter-input filter-input-radio" name="bluetooth" id="bluetooth-no">
+                    <label for="bluetooth-no">Нет</label>
+                  </li>
+                </ul>
+            </fieldset>
+            <button type="submit" class="button filter-button">Показать</button>
 					</form>
 		    </div>
       </section>
       <section class="catalog catalog-column">
 				<div class="catalog-right">
-					
+					<div class="sort-box">
+            <h3 class="columns-title">Сортировка:</h3>
+            <ul class="sort-box-list">
+              <li><a class="sort-box-active" href="">По цене</a></li>
+              <li><a href="">По типу</a></li>
+              <li><a href="">По популярности</a></li>
+            </ul>
+            <ul class="sort-box-list direction">
+              <li><a href=""><span class="visually-hidden">По возрастанию</span></a></li>
+              <li><a href=""><span class="visually-hidden">По убыванию</span></a></li>
+            </ul>
+          </div>
 				</div>
       </section>
     </div>
