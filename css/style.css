@@ -890,7 +890,6 @@ td:nth-child(2) {
   display: flex;
   flex-direction: column;
 }
-
 /*---------- footer-line-1 ---------- */
 
 .main-footer .logo-title {
@@ -1014,7 +1013,9 @@ td:nth-child(2) {
   opacity: 0.3;
 }
 
-
+/*------------------------------  ------------------------------ */
+/*--------------------------- CATALOG -------------------------- */
+/*------------------------------  ------------------------------ */
 
 
 .catalog-columns {
@@ -1036,7 +1037,7 @@ td:nth-child(2) {
 }
 
 .catalog {
-  background-color: blue;
+  /* background-color: blue; */
   flex-basis: 830px;
 }
 
@@ -1052,4 +1053,49 @@ td:nth-child(2) {
   height: 100%;
   margin-right: auto;
   background-color: grey;
+}
+
+.catalog.main-header {
+  margin-bottom: 55px;
+}
+
+/*--------------------------- main-section -------------------------- */
+
+.catalog.main.wrapper {
+  padding: 0 60px;
+}
+
+.catalog-section {
+  box-shadow: 0 0 0 3px red;
+  width: 100%;
+}
+
+.catalog-title {
+  margin: 0;
+  padding: 0;
+  font-family: gilroyextrabold;
+  font-size: 47px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0.6px;
+  margin-bottom: 18px;
+}
+
+.breadcrumbs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.breadcrumbs li {
+  margin-right: 38px;
+}
+
+.breadcrumbs a {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  letter-spacing: 0.14px;
+  margin-bottom: 20px;
 }
