@@ -1032,12 +1032,12 @@ td:nth-child(2) {
 }
 
 .filters {
-  background-color: green;
+  background-color: #eeeeee;
   flex-basis: 330px;
 }
 
 .catalog {
-  /* background-color: blue; */
+  background-color: #ffffff;
   flex-basis: 830px;
 }
 
@@ -1045,14 +1045,14 @@ td:nth-child(2) {
   width: 330px;
   height: 100%;
   margin-left: auto;
-  background-color: grey;
+  /* background-color: grey; */
 }
 
 .catalog-right {
   width: 830px;
   height: 100%;
   margin-right: auto;
-  background-color: grey;
+  /* background-color: grey; */
 }
 
 .catalog.main-header {
@@ -1099,3 +1099,5 @@ td:nth-child(2) {
   letter-spacing: 0.14px;
   margin-bottom: 20px;
 }
+
+
