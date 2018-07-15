@@ -1047,7 +1047,7 @@ td:nth-child(2) {
   height: 100%;
   margin-left: auto;
   /* background-color: grey; */
-  box-shadow: 0 0 0 3px green;
+  /* box-shadow: 0 0 0 3px green; */
 }
 
 .catalog-right {
@@ -1103,6 +1103,7 @@ td:nth-child(2) {
   font-weight: 300;
   letter-spacing: 0.14px;
   margin-bottom: 20px;
+  color: #000000;
 }
 
 /*---------- column-header (left&right) ---------- */
@@ -1140,4 +1141,101 @@ td:nth-child(2) {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+
+/*---------- catalog-left ---------- */
+
+.filter fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.filter fieldset::before {
+  position: absolute;
+  content: "";
+  width: 201px;
+  height: 2px;
+  background-color: #000000;
+  top: 0;
+}
+
+.filter-option-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.filter label {
+  margin-left: 15px;
+  position: relative;
+}
+
+.filter legend {
+  width: 93px;
+  height: 12px;
+  color: #000000;
+  font-family: gilroyextrabold;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+}
+
+.filter .price {
+  height: 50px;
+}
+
+/* .filter label::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -23px;
+  width: 27px;
+  height: 23px;
+  border: 2px solid black;
+} */
+
+.filter-input-checkbox + label::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -23px;
+  width: 24px;
+  height: 23px;
+  background: url("../img/checkbox-off.svg") no-repeat 1px 0;
+}
+
+.filter-input-checkbox:checked + label::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -23px;
+  width: 24px;
+  height: 23px;
+  background: url("../img/checkbox-on.svg") no-repeat 1px 0;
+}
+
+.filter-input-radio + label::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -23px;
+  width: 24px;
+  height: 23px;
+  background: url("../img/radio-off.svg") no-repeat 1px 0;
+}
+
+.filter-input-radio:checked + label::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -23px;
+  width: 24px;
+  height: 23px;
+  background: url("../img/radio-on.svg") no-repeat 1px 0;
 }
