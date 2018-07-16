@@ -1171,6 +1171,7 @@ td:nth-child(2) {
   padding: 0;
 }
 
+
 .sort-box-list.direction a {
   padding: 5px;
   display: block;
@@ -1284,10 +1285,7 @@ label:active::before {
 
 .catalog-item {
   width: 360px;
-}
-
-.catalog-item-hover {
-  display: none;
+  position: relative;
 }
 
 .catalog-item-info {
@@ -1313,7 +1311,6 @@ label:active::before {
   line-height: 24px;
   letter-spacing: 0.18px;
   color: #000000;
-  background-color: grey;
 }
 
 .catalog-item-price {
@@ -1323,5 +1320,43 @@ label:active::before {
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0.16px;
-  background-color: grey;
+}
+
+.catalog-item-hover {
+  /* display: none; */
+  position: absolute;
+  width: 360px;
+  height: 380px;
+  box-shadow: 0 0 0 3px green;
+  top: 0;
+}
+
+.catalog-item img:hover ~ .catalog-item-hover,
+.catalog-item-hover:hover {
+  display: block;  
+}
+
+.catalog-item-button {
+  margin: 0 auto;
+}
+
+.compare-button {
+  display: block;
+  opacity: 0.5;
+  color: #000000;
+  font-family: "open_sanslight";
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0.13px;
+  margin: 0 auto;
+  width: 150px;
+}
+
+.compare-button:hover {
+  opacity: 1;
+}
+
+.compare-button:active {
+  opacity: 0.2;
 }
