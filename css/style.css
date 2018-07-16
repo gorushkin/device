@@ -35,7 +35,7 @@ body {
   padding: 0;
 
   font-size: 15px;
-  line-height: 30px;
+  /* line-height: 30px; */
   font-family: open_sanslight;
   color: #000000;
   letter-spacing: 0.15px;
@@ -66,8 +66,24 @@ html {
   margin: 0 auto;
 }
 
-.visually-hidden {
-  display: none;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*------------------------------ header ------------------------------ */
@@ -470,7 +486,7 @@ html {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3.5px;
-  /* box-shadow: 0 0 0 3px red; */
+  border: none;
   background: linear-gradient(
     to bottom,
     transparent 16px,
@@ -1018,10 +1034,12 @@ td:nth-child(2) {
 /*------------------------------  ------------------------------ */
 
 
+/*--------------------------- main-section -------------------------- */
+
 .catalog-columns {
   width: 100%;
-  height: 500px;
-  background-color: grey;
+  /* height: 500px; */
+  /* background-color: grey; */
   display: flex;
   min-width: 1160px;
 }
@@ -1031,21 +1049,23 @@ td:nth-child(2) {
   flex-grow: 1;
 }
 
-.filters {
-  background-color: #eeeeee;
+.left-column {
+  background-color: #efefef;
   flex-basis: 330px;
 }
 
-.catalog {
+.right-column {
   background-color: #ffffff;
   flex-basis: 830px;
 }
 
-.catalog-left {
+
+.filters {
   width: 330px;
   height: 100%;
   margin-left: auto;
-  /* background-color: grey; */
+  box-shadow: 0 0 0 3px green;
+  padding-left: 60px;
 }
 
 .catalog-right {
@@ -1053,24 +1073,25 @@ td:nth-child(2) {
   height: 100%;
   margin-right: auto;
   /* background-color: grey; */
+  box-shadow: 0 0 0 3px blue;
 }
 
 .catalog.main-header {
   margin-bottom: 55px;
 }
 
-/*--------------------------- main-section -------------------------- */
-
-.catalog.main.wrapper {
+.catalog.wrapper {
   padding: 0 60px;
 }
 
 .catalog-section {
-  box-shadow: 0 0 0 3px red;
+  /* box-shadow: 0 0 0 3px red; */
   width: 100%;
 }
 
-.catalog-title {
+/*---------- section-title & breadcrumbs ---------- */
+
+.section-title{
   margin: 0;
   padding: 0;
   font-family: gilroyextrabold;
@@ -1098,6 +1119,244 @@ td:nth-child(2) {
   font-weight: 300;
   letter-spacing: 0.14px;
   margin-bottom: 20px;
+  color: #000000;
+  position: relative;
+}
+
+.breadcrumbs a:not(.active)::after {
+  position: absolute;
+  content: "";
+  top: 7px;
+  right: -20px;
+  width: 4px;
+  height: 7px;
+  background: url("../img/nav-arrow.svg") no-repeat;
+}
+
+/*---------- column-header (left&right) ---------- */
+
+.left-column .column-header-wrapper {
+  background-color: #dbdbdb;
+  /* box-shadow: 0 0 0 3px red; */
+}
+
+.left-column .column-title {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  width: 270px;
+}
+
+.right-column .column-header-wrapper {
+  background-color: #ebebeb;
+  /* box-shadow: 0 0 0 3px red; */
+}
+
+.right-column .column-title {
+  margin: 0;
+  padding: 0;
+  width: 270px;
+}
+
+.sort-box {
+  display: flex;
+  /* box-shadow: 0 0 0 3px cadetblue; */
+  width: 830px;
+}
+
+.sort-box-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 
+.sort-box-list.direction a {
+  padding: 5px;
+  display: block;
+  opacity: 0.2;
+}
+
+.sort-box-list.direction a:hover {
+  opacity: 0.4;
+}
+
+.sort-box-list.direction a:active {
+  opacity: 1;
+}
+
+
+/*---------- catalog-left ---------- */
+
+.filter-form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.filter-form fieldset::before {
+  position: absolute;
+  content: "";
+  width: 201px;
+  height: 2px;
+  background-color: #000000;
+  top: 0;
+}
+
+.filter-option-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-form legend {
+  width: 93px;
+  height: 12px;
+  color: #000000;
+  font-family: gilroyextrabold;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+}
+
+.filter-form .price {
+  height: 50px;
+}
+
+.filter-form label {
+  margin-left: 35px;
+  position: relative;
+  cursor: pointer;
+}
+
+.filter-form label::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -33px;
+  width: 27px;
+  height: 23px;
+}
+
+/*---------- filter-input ---------- */
+
+.filter-input-checkbox + label::before {
+  background: url("../img/checkbox-off.svg") no-repeat 1px 0;
+  cursor: pointer;
+}
+
+.filter-input-checkbox:checked + label::before {
+  background: url("../img/checkbox-on.svg") no-repeat 1px 0;
+}
+
+.filter-input-radio + label::before {
+  background: url("../img/radio-off.svg") no-repeat 1px 0;
+}
+
+.filter-input-radio:checked + label::before {
+  background: url("../img/radio-on.svg") no-repeat 1px 0;
+}
+
+.filter-input:disabled + label::before,
+.filter-input:disabled + label  {
+  opacity: 0.25;
+}
+.filter-input:focus + label::before,
+label:hover::before {
+  opacity: 0.6;
+}
+.filter-input:active + label::before,
+label:active::before {
+  opacity: 1;
+}
+
+/*---------- catalog-item ---------- */
+
+.catalog-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-item {
+  width: 360px;
+  position: relative;
+}
+
+.catalog-item-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.catalog-item-title a {
+  padding: 0;
+  margin: 0;
+  line-height: 24px;
+}
+
+.catalog-item-title {
+  display: inline-block;
+  width: 260px;
+  font-family: gilroyextrabold;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: #000000;
+}
+
+.catalog-item-price {
+  color: #464646;
+  font-family: gilroylight;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+}
+
+.catalog-item-hover {
+  /* display: none; */
+  position: absolute;
+  width: 360px;
+  height: 380px;
+  box-shadow: 0 0 0 3px green;
+  top: 0;
+}
+
+.catalog-item img:hover ~ .catalog-item-hover,
+.catalog-item-hover:hover {
+  display: block;  
+}
+
+.catalog-item-button {
+  margin: 0 auto;
+}
+
+.compare-button {
+  display: block;
+  opacity: 0.5;
+  color: #000000;
+  font-family: "open_sanslight";
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0.13px;
+  margin: 0 auto;
+  width: 150px;
+}
+
+.compare-button:hover {
+  opacity: 1;
+}
+
+.compare-button:active {
+  opacity: 0.2;
+}
