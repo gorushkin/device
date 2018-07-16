@@ -1157,6 +1157,21 @@ td:nth-child(2) {
   padding: 0;
 }
 
+.sort-box-list.direction a {
+  padding: 5px;
+  display: block;
+  opacity: 0.2;
+}
+
+.sort-box-list.direction a:hover {
+  opacity: 0.4;
+}
+
+.sort-box-list.direction a:active {
+  opacity: 1;
+}
+
+
 /*---------- catalog-left ---------- */
 
 .filter-form fieldset {
