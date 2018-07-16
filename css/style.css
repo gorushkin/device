@@ -1157,7 +1157,6 @@ td:nth-child(2) {
   padding: 0;
 }
 
-
 /*---------- catalog-left ---------- */
 
 .filter-form fieldset {
@@ -1228,4 +1227,6 @@ td:nth-child(2) {
 .filter-input-radio:checked + label::before {
   background: url("../img/radio-on.svg") no-repeat 1px 0;
 }
+
+/*---------- catalog-right ---------- */
 
