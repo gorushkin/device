@@ -66,8 +66,24 @@ html {
   margin: 0 auto;
 }
 
-.visually-hidden {
-  display: none;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*------------------------------ header ------------------------------ */
@@ -1214,6 +1230,7 @@ td:nth-child(2) {
 .filter-form label {
   margin-left: 35px;
   position: relative;
+  cursor: pointer;
 }
 
 .filter-form label::before {
@@ -1229,6 +1246,7 @@ td:nth-child(2) {
 
 .filter-input-checkbox + label::before {
   background: url("../img/checkbox-off.svg") no-repeat 1px 0;
+  cursor: pointer;
 }
 
 .filter-input-checkbox:checked + label::before {
@@ -1241,6 +1259,19 @@ td:nth-child(2) {
 
 .filter-input-radio:checked + label::before {
   background: url("../img/radio-on.svg") no-repeat 1px 0;
+}
+
+.filter-input:disabled + label::before,
+.filter-input:disabled + label  {
+  opacity: 0.25;
+}
+.filter-input:focus + label::before,
+label:hover::before {
+  opacity: 0.6;
+}
+.filter-input:active + label::before,
+label:active::before {
+  opacity: 1;
 }
 
 /*---------- catalog-right ---------- */
