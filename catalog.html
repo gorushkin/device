@@ -118,12 +118,13 @@
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="price">
               <legend class="price-title filter-title">Стоимость</legend>
+              <div class="price-control"></div>
             </fieldset>
             <fieldset class="color-block">
-              <legend class="color-block-title filter-title"></legend>
+              <legend class="color-block-title filter-title">Цвет</legend>
               <ul class="filter-option-list">
                 <li class="filter-option-item">
-                  <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="color black" id="black" disabled>
+                  <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="color black" id="black" checked>
                   <label for="black">Черный</label>
                 </li>
                 <li class="filter-option-item">
@@ -131,11 +132,11 @@
                   <label for="white">Белый</label>
                 </li>
                 <li class="filter-option-item">
-                  <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="color blue" id="blue">
+                  <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="color blue" id="blue" checked>
                   <label for="blue">Синий</label>
                 </li>
                 <li class="filter-option-item">
-                  <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="color red" id="red">
+                  <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="color red" id="red" checked>
                   <label for="red">Красный</label>
                 </li>
                 <li class="filter-option-item">
@@ -165,7 +166,7 @@
       <section class="right-column catalog-column">
 
         <div class="column-header-wrapper">
-          <div class="sort-box">
+          <!-- <div class="sort-box"> -->
             <h3 class="column-title">Сортировка:</h3>
             <ul class="sort-box-list">
               <li>
@@ -192,7 +193,7 @@
                 </a>
               </li>
             </ul>
-          </div>
+          <!-- </div> -->
         </div>
 
         <div class="catalog-right">
