@@ -470,7 +470,7 @@ html {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3.5px;
-  /* box-shadow: 0 0 0 3px red; */
+  border: none;
   background: linear-gradient(
     to bottom,
     transparent 16px,
@@ -1034,7 +1034,7 @@ td:nth-child(2) {
 }
 
 .left-column {
-  background-color: #eeeeee;
+  background-color: #efefef;
   flex-basis: 330px;
 }
 
@@ -1105,6 +1105,17 @@ td:nth-child(2) {
   letter-spacing: 0.14px;
   margin-bottom: 20px;
   color: #000000;
+  position: relative;
+}
+
+.breadcrumbs a:not(.active)::after {
+  position: absolute;
+  content: "";
+  top: 7px;
+  right: -20px;
+  width: 4px;
+  height: 7px;
+  background: url("../img/nav-arrow.svg") no-repeat;
 }
 
 /*---------- column-header (left&right) ---------- */
@@ -1200,6 +1211,8 @@ td:nth-child(2) {
   height: 23px;
 }
 
+/*---------- filter-input ---------- */
+
 .filter-input-checkbox + label::before {
   background: url("../img/checkbox-off.svg") no-repeat 1px 0;
 }
@@ -1215,3 +1228,4 @@ td:nth-child(2) {
 .filter-input-radio:checked + label::before {
   background: url("../img/radio-on.svg") no-repeat 1px 0;
 }
+
