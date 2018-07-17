@@ -94,7 +94,7 @@ input[type="radio"].visually-hidden {
   align-items: left;
   background: linear-gradient(#ffffff 40px, #f7e296 40px);
   /* background: linear-gradient(#ffffff 40px, #000000 40px); */
-  min-height: 226px;
+  min-height: 226px;  
 }
 
 .main-navigation {
@@ -151,7 +151,7 @@ input[type="radio"].visually-hidden {
   padding-left: 40px;
   background: url("../img/search.svg") no-repeat 3px 15px;
   outline: none;
-  height: 47px;  
+  height: 47px;
 }
 
 .search-input::placeholder {
@@ -379,10 +379,10 @@ input[type="radio"].visually-hidden {
 /*------------------------------ product-slider ------------------------------ */
 
 .product-slider {
-  min-height: 610px;
-  background: linear-gradient(#f8e296 129px, #ffffff 129px);
-  /* background: linear-gradient(#000000 129px, #ffffff 129px); */
-
+  /* min-height: 590px; */
+  background: linear-gradient(#f8e296 113px, #ffffff 113px);
+  /* background: linear-gradient(#000000 112px, #ffffff 112px); */
+  margin-bottom: 44px;
   position: relative;
 }
 
@@ -395,6 +395,7 @@ input[type="radio"].visually-hidden {
 
 .slider-item {
   min-height: 550px;
+  box-shadow: 0 0 0 3px red;
 }
 
 .slider-1,
@@ -411,7 +412,7 @@ input[type="radio"].visually-hidden {
 
 .slider-1 .product-photo {
   padding-left: 90px;
-  padding-top: 18px;
+  padding-top: 2px;
 }
 
 .slider-3 .product-photo {
@@ -426,7 +427,7 @@ input[type="radio"].visually-hidden {
 
 .product-block {
   width: 500px;
-  padding-top: 51px;
+  padding-top: 36px;
   position: relative;
 }
 
@@ -448,7 +449,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   letter-spacing: 0.36px;
   position: absolute;
-  top: 6px;
+  top: -10px;
   right: -12px;
 
 }
@@ -459,7 +460,7 @@ input[type="radio"].visually-hidden {
   width: 100px;
   height: 7px;
   background-color: #ffffff;
-  top: 55px;
+  top: 39px;
   right: 460px;
 }
 
@@ -467,6 +468,7 @@ input[type="radio"].visually-hidden {
   color: #464646;
   margin-bottom: 43px;
   width: 485px;
+  line-height: 30px;
 
 }
 
@@ -593,13 +595,14 @@ td:nth-child(2) {
 
 /*------------------------------ catalog-section ------------------------------ */
 
-.catalog-list {
+.product-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
   margin-bottom: 63px;
+  box-shadow: 0 0 0 3px red;
 }
 
 .item-image {
@@ -618,41 +621,41 @@ td:nth-child(2) {
   width: 160px;
 }
 
-.catalog-item:nth-child(1) .item-image {
+.product-list-item:nth-child(1) .item-image {
   background: url("../img/popular-1.svg") no-repeat 50% 50%,
   #f8e296;
 }
 
-.catalog-item:nth-child(2) .item-image {
+.product-list-item:nth-child(2) .item-image {
   background: url("../img/popular-2.svg") no-repeat 50% 41px,
   #f8e296;;
 }
 
-.catalog-item:nth-child(3) .item-image {
+.product-list-item:nth-child(3) .item-image {
   background: url("../img/popular-3.svg") no-repeat 49px 39px,
   #f8e296;
 }
 
-.catalog-item:nth-child(4) .item-image {
+.product-list-item:nth-child(4) .item-image {
   background: url("../img/popular-4.svg") no-repeat 27px 50px,
   #f8e296
 }
 
-.catalog-item:nth-child(5) .item-image {
+.product-list-item:nth-child(5) .item-image {
   background: url("../img/popular-5.svg") no-repeat 55px 33px,
   #f8e296;
 }
 
-.catalog-item:nth-child(6) .item-image {
+.product-list-item:nth-child(6) .item-image {
   background: url("../img/popular-6.svg") no-repeat 12px 50px,
   #f8e296;
 }
 
-.catalog-item:hover .item-image {
+.product-list-item:hover .item-image {
   background-color: #f0c52e;
 }
 
-.catalog-item:active {
+.product-list-item:active {
   opacity: 0.5;
 }
 
@@ -758,6 +761,7 @@ td:nth-child(2) {
 .feature-description {
   width: 446px;
   letter-spacing: 0.3px;
+  line-height: 30px;
 }
 
 .feature::after {
@@ -830,6 +834,7 @@ td:nth-child(2) {
 
 .information-text {
   color: #464646;
+  line-height: 30px;
   margin: 0;
   padding: 0;  
 }
@@ -963,12 +968,16 @@ td:nth-child(2) {
   list-style: none;
   justify-content: space-between;
   margin-bottom: 5px;
+  box-shadow: 0 0 0 3px red;
 }
 
-.line-2 p {
+.address,
+.phonenumber {
   margin: 0;
   padding: 0;
+  line-height: 30px;
 }
+
 
 
 .line-2 > li:first-child,
