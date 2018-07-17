@@ -1460,7 +1460,6 @@ label:active::before {
   list-style: none;
   padding: 0;
   margin: 0;
-  /* box-shadow: 0 0 0 3px red; */
   justify-content: space-between;
   background-color: #ebebeb;
   min-height: 70px;
@@ -1469,8 +1468,14 @@ label:active::before {
   margin-bottom: 76px;
 }
 
-.paginator-item {
-  /* box-shadow: 0 0 0 3px green; */
+.paginator-item:first-child {
+  margin-right: auto;
+  width: 140px;
+}
+
+.paginator-item:last-child {
+  margin-left: auto;
+  width: 140px;
 }
 
 .paginator-button {
@@ -1478,7 +1483,40 @@ label:active::before {
   font-family: "gilroyextrabold";
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 70px;
   text-transform: uppercase;
-  letter-spacing: 0.91px;
+  letter-spacing: 3.2px;
+  opacity: 0.3;
+  /* box-shadow: 0 0 0 3px green; */
+  display: inline-block;
+  padding: 0 14px;
+}
+
+.paginator-button:hover,
+.paginator-button:focus {
+  opacity: 0.6;
+}
+
+.paginator-button.backforward,
+.paginator-button.active,
+.paginator-button:active {
+  opacity: 1;
+}
+
+.paginator-button.backforward {
+  line-height: 70px;
+  display: inline-block;
+  text-align: center;
+  padding: 0 30px;
+  flex-grow: 1;
+}
+
+.paginator-button.backforward:hover,
+.paginator-button.backforward:focus {
+  background-color: #d8d8d8;
+}
+
+.paginator-button.backforward:active {
+  background-color: #d8d8d8;
+  color: rgba(0,0,0, 0.3);
 }
