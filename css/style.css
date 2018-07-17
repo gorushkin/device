@@ -1078,7 +1078,8 @@ td:nth-child(2) {
   height: 100%;
   margin-right: auto;
   /* background-color: grey; */
-  /* box-shadow: 0 0 0 3px blue; */
+  box-shadow: 0 0 0 3px blue;
+  padding-left: 70px;
 }
 
 .catalog.main-header {
@@ -1358,15 +1359,16 @@ label:active::before {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  padding-left: 70px;
+  /* padding-left: 70px; */
   padding-top: 69px;
+  /* margin-bottom: 15px; */
 }
 
 .catalog-item {
   width: 360px;
   position: relative;
   margin-bottom: 46px;
-  /* box-shadow: 0 0 0 3px blue;; */
+  box-shadow: 0 0 0 3px blue;;
 }
 
 .catalog-item img {
@@ -1445,4 +1447,33 @@ label:active::before {
 
 .compare-button:active {
   opacity: 0.2;
+}
+
+/*---------- paginator-list ---------- */
+
+.paginator-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* box-shadow: 0 0 0 3px red; */
+  justify-content: space-between;
+  background-color: #ebebeb;
+  min-height: 70px;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.paginator-item {
+  /* box-shadow: 0 0 0 3px green; */
+}
+
+.paginator-button {
+  color: #000000;
+  font-family: "gilroyextrabold";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
 }
