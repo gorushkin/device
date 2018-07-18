@@ -802,6 +802,23 @@ td:nth-child(2) {
   margin-bottom: 60px;
 }
 
+.brand-item a {
+  display: block;
+  width: 260px;
+  height: 110px;
+  /* box-shadow: 0 0 0 3px green; */
+  overflow: hidden;
+}
+
+.brand-img.hover {
+  display: none;
+}
+
+.brand-item:hover .brand-img.hover {
+  display: block;
+}
+
+
 /*------------------------------ information-section ------------------------------ */
 
 /*---------- about-us ---------- */
