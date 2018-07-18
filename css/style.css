@@ -201,7 +201,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   padding-top: 9px;;
   display: flex;
-  box-shadow: 0 0 0 3px green;
+  /* box-shadow: 0 0 0 3px green; */
 }
 
 .user-navigation a {
@@ -987,7 +987,7 @@ td:nth-child(2) {
   position: relative;
 }
 
-.main-footer .login::before {
+.main-footer .user::before {
   background: url("../img/user_footer.svg") no-repeat 50% 50%;
 }
 
