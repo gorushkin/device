@@ -292,16 +292,18 @@ input[type="radio"].visually-hidden {
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 1100px;
-  min-height: 129px;
-  display: flex;
+  width: 1160px;
+  min-height: 162px;
+  /* display: flex; */
   justify-content: flex-start;
   background-color: #f8e296;
   display: none;
   position: absolute;
-  padding-top: 54px;
-  left: 0px;
+  padding-top: 20px;
+  padding-left: 60px;
+  left: -60px;
   z-index: 15;
+  /* box-shadow: 0 0 0 3px red; */
 }
 
 .catalog-menu {
@@ -309,6 +311,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   margin-right: 60px;
+  /* box-shadow: 0 0 0 3px red; */
 }
 
 .main-catalog-menu a { 
@@ -380,6 +383,7 @@ input[type="radio"].visually-hidden {
 
 .product-slider {
   background: linear-gradient(#f8e296 113px, #ffffff 113px);
+  /* background: linear-gradient(#000000 113px, #ffffff 113px); */
   margin-bottom: 44px;
   position: relative;
 }
