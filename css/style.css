@@ -1385,6 +1385,7 @@ label:active::before {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   /* padding-left: 70px; */
   padding-top: 69px;
   /* margin-bottom: 15px; */
@@ -1394,11 +1395,13 @@ label:active::before {
   width: 360px;
   position: relative;
   margin-bottom: 46px;
-  box-shadow: 0 0 0 3px blue;;
+  /* box-shadow: 0 0 0 3px blue;; */
 }
 
 .catalog-item img {
   padding-bottom: 28px;
+  /* background-color: red; */
+  display: block;
 }
 
 .catalog-item-info {
