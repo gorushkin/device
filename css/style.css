@@ -201,12 +201,18 @@ input[type="radio"].visually-hidden {
   padding: 0;
   padding-top: 9px;;
   display: flex;
+  box-shadow: 0 0 0 3px green;
 }
 
 .user-navigation a {
   margin-left: 25px;
   position: relative;
   line-height: 30px;  
+}
+
+.user-navigation a.min-gap {
+  margin-left: 20px;
+  opacity: 0.3;
 }
 
 .user-navigation li {
@@ -216,6 +222,22 @@ input[type="radio"].visually-hidden {
 .user-navigation li:first-child {
   flex-grow: 1;
   margin-left: 0;
+  /* box-shadow: 0 0 0 3px red; */
+}
+
+.user-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.user-menu li {
+  margin: 0;  
+}
+
+.user-menu .hide {
+  display: none;
 }
 
 .user-navigation a::before {
@@ -228,7 +250,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-.login::before {
+.user::before {
   background: url("../img/user.svg") no-repeat 50% 50%;
 }
 
@@ -297,7 +319,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: flex-start;
   background-color: #f8e296;
-  /* display: none; */
+  display: none;
   position: absolute;
   padding-top: 20px;
   padding-left: 60px;
