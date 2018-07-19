@@ -537,7 +537,7 @@ input[type="radio"].visually-hidden {
   font-size: 0;
   right: 72px;
   top: 335px;
-  z-index: 100;
+  z-index: 40;
 }
 
 .product-slider-controls {
@@ -1600,24 +1600,56 @@ label:active::before {
 }
 
 
-/*------------------------------ wtite-to-us-section ------------------------------ */
+/*------------------------------ popups ------------------------------ */
 
-.write-to-us {
+.popup {
+  box-shadow: 0px 10px 50px 1px #000101;
   display: none;
   position:fixed;
+  z-index: 100;
+}
+
+.modal-close {
+  position: absolute;
+  z-index: 50;
+  top: 23px;
+  right: 22px;
+  width: 55px;
+  height: 55px;
+  border: none;
+  font-size: 0;
+  background-color: #fff;
+  background: url("../img/modal-close.svg") no-repeat 50% 50%;
+  cursor: pointer;
+  opacity: 0.5;
+  outline: none;
+}
+
+.modal-close:hover {
+  opacity: 1;
+} 
+
+.modal-close:active {
+  opacity: 0.3;
+} 
+
+.modal-show {
+  display: block;
+}
+
+/*------------------------------ wtite-to-us-section ------------------------------ */
+
+.write-to-us {  
   width: 960px;
   height: 553px;
   top: 50%;
   margin-top: -275px;
   left: 50%;
   margin-left: -480px;
-  box-shadow: 0 0 0 1px red;
   background: #fff;
-  padding: 100px;
-}
-
-.modal-show {
-  display: block;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 80px;
 }
 
 .write-to-us-form {
@@ -1628,33 +1660,71 @@ label:active::before {
 
 .write-to-us label {
   display: block;
+  color: #000000;
+  font-family: "gilroyextrabold";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 5px;
 }
 
 .write-to-us input {
   width: 360px;
+  height: 50px;
+  margin-bottom: 5px;
+  padding-left: 18px;  
 }
 
 .write-to-us-item textarea {
   width: 760px;
+  margin-bottom: 24px;
+  padding-top: 15px;
+  padding-left: 18px;
+  box-sizing: border-box;
+  height: 156px;
+  
+}
+
+.submit-button {
+  width: 200px;
+}
+
+.write-to-us input,
+.write-to-us-item textarea {
+  background-color: #f2f2f2;
+  border: none;
+  border: 3px solid #f2f2f2;
+}
+
+.write-to-us input:hover,
+.write-to-us textarea:hover {
+  background-color: #eaeaea;
+  border: 3px solid #eaeaea;  
+}
+
+.write-to-us input:focus,
+.write-to-us textarea:focus {
+  background-color: #ffffff;
+  outline: none;
+  border: 3px solid #f0c52e;
+}
+
+.write-to-us-item input:invalid,
+.write-to-us-item textarea:invalid {
+  border-color: #f6dada;
+  background-color: #f6dada;
 }
 
 /*------------------------------ map ------------------------------ */
 
 .map-popUp {
-  display: none;
-  position:fixed;
   width: 960px;
   height: 559px;
   top: 50%;
   margin-top: -275px;
   left: 50%;
   margin-left: -480px;
-  box-shadow: 0 0 0 5px red;
   background: #fff;
-  /* padding: 10px; */
   overflow: hidden;
 }
 
-.modal-show {
-  display: block;
-}
