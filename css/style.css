@@ -1426,7 +1426,6 @@ label:active::before {
 }
 
 .catalog-item img {
-  
   background-color: red;
   /* display: block; */
 }
@@ -1516,6 +1515,10 @@ label:active::before {
   width: 60px;
   height: 61px;
   background: url("../img/new.png") no-repeat 50% 50%;
+}
+
+.img-wrpapper:hover::after {
+  opacity: 0.3;
 }
 
 /*---------- paginator-list ---------- */
