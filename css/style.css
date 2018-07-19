@@ -1593,5 +1593,37 @@ label:active::before {
 /*------------------------------ wtite-to-us-section ------------------------------ */
 
 .write-to-us {
-  display: none;
+  /* display: none; */
+  position:fixed;
+  width: 960px;
+  height: 553px;
+  top: 50%;
+  margin-top: -275px;
+  left: 50%;
+  margin-left: -480px;
+  box-shadow: 0 0 0 1px red;
+  background: #fff;
+  padding: 100px;
+}
+
+.modal-show {
+  display: block;
+}
+
+.write-to-us-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.write-to-us label {
+  display: block;
+}
+
+.write-to-us input {
+  width: 360px;
+}
+
+.write-to-us-item textarea {
+  width: 760px;
 }
