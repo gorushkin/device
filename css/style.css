@@ -926,12 +926,22 @@ td:nth-child(2) {
   overflow: hidden;
   width: 560px;
   height: 222px;
+  /* box-shadow: 0 0 0 3px red; */
 }
 
 .map iframe {
-  z-index: 5;
+  /* z-index: 5; */
   /* margin: auto; */
   display: block;
+}
+
+.map-fog {
+  /* background-color: gray; */
+  width: 560px;
+  height: 222px;
+  z-index: 6;
+  opacity: 0.0;
+  position: absolute;
 }
 
 .information .button {
@@ -1593,7 +1603,7 @@ label:active::before {
 /*------------------------------ wtite-to-us-section ------------------------------ */
 
 .write-to-us {
-  /* display: none; */
+  display: none;
   position:fixed;
   width: 960px;
   height: 553px;
@@ -1626,4 +1636,25 @@ label:active::before {
 
 .write-to-us-item textarea {
   width: 760px;
+}
+
+/*------------------------------ map ------------------------------ */
+
+.map-popUp {
+  display: none;
+  position:fixed;
+  width: 960px;
+  height: 559px;
+  top: 50%;
+  margin-top: -275px;
+  left: 50%;
+  margin-left: -480px;
+  box-shadow: 0 0 0 5px red;
+  background: #fff;
+  /* padding: 10px; */
+  overflow: hidden;
+}
+
+.modal-show {
+  display: block;
 }
