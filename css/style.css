@@ -1600,7 +1600,7 @@ label:active::before {
 }
 
 
-/*------------------------------ popups ------------------------------ */
+/*------------------------------ popups common------------------------------ */
 
 .popup {
   box-shadow: 0px 10px 50px 1px #000101;
@@ -1668,6 +1668,8 @@ label:active::before {
   margin-bottom: 5px;
 }
 
+/*---------- стилизация input и textarea ---------- */
+
 .write-to-us input {
   width: 360px;
   height: 50px;
@@ -1681,12 +1683,7 @@ label:active::before {
   padding-top: 15px;
   padding-left: 18px;
   box-sizing: border-box;
-  height: 156px;
-  
-}
-
-.submit-button {
-  width: 200px;
+  height: 156px;  
 }
 
 .write-to-us input,
@@ -1714,6 +1711,31 @@ label:active::before {
   border-color: #f6dada;
   background-color: #f6dada;
 }
+
+.submit-button {
+  width: 200px;
+}
+
+/*---------- стилизация placeholder'ов ---------- */
+
+.write-to-us-item input::placeholder,
+.write-to-us-item textarea::placeholder {
+  opacity: 0.4;
+  color: #464646;
+  font-family: "open_sanslight";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.write-to-us-item input:focus::placeholder,
+.write-to-us-item textarea:focus::placeholder {
+  opacity: 1;
+}
+
+
+
+
 
 /*------------------------------ map ------------------------------ */
 
