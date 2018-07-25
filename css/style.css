@@ -13,7 +13,7 @@
 
   src: url("../fonts/gilroylight-webfont.woff2") format("woff2");
 }
-/* 
+
 @font-face {
   font-weight: normal;
   font-family: "open_sanslight";
@@ -28,14 +28,15 @@
   font-style: normal;
 
   src: url("../fonts/opensans-regular-webfont.woff2") format("woff2");
-} */
+}
 
 body {
   margin: 0;
   padding: 0;
 
   font-size: 15px;
-  font-family: 'Open Sans', sans-serif;
+  /* line-height: 30px; */
+  font-family: open_sanslight;
   color: #000000;
   letter-spacing: 0.15px;
 
@@ -337,8 +338,7 @@ input[type="radio"].visually-hidden {
 
 .main-catalog-menu a { 
   color: #000000;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-family: "open_sanslight";
   font-size: 15px;
   font-weight: 300;
   line-height: 36px;
@@ -1254,8 +1254,7 @@ td:nth-child(2) {
 
 .sort-box-list.sort-type a {
   color: #000000;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-family: "open_sanslight";
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1503,8 +1502,7 @@ label:active::before {
   display: block;
   opacity: 0.5;
   color: #000000;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-family: "open_sanslight";
   font-size: 13px;
   font-weight: 300;
   line-height: 36px;
@@ -1724,8 +1722,7 @@ label:active::before {
 .write-to-us-item textarea::placeholder {
   opacity: 0.4;
   color: #464646;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-family: "open_sanslight";
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
