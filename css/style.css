@@ -489,10 +489,13 @@ input[type="radio"].visually-hidden {
 }
 
 .product-info {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   color: #464646;
   margin-bottom: 43px;
-  width: 485px;
+  width: 490px;
   line-height: 30px;
+  box-shadow: 0 0 0 3px red;
 
 }
 
@@ -500,6 +503,7 @@ input[type="radio"].visually-hidden {
   /* display: block; */
   margin-bottom: 47px;
   margin-right: 175px;
+  
 }
 
 .button {
@@ -875,10 +879,13 @@ td:nth-child(2) {
 }
 
 .information-text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   color: #464646;
   line-height: 30px;
   margin: 0;
-  padding: 0;  
+  padding: 0;
+  box-shadow: 0 0 0 3px red;
 }
 
 .about-us {
