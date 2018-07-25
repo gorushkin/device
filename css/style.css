@@ -1315,6 +1315,7 @@ td:nth-child(2) {
 .range-controls {
   padding-top: 8px;
   position: relative;
+  margin-bottom: 50px;
 }
 
 .range-controls .scale {
@@ -1351,6 +1352,46 @@ td:nth-child(2) {
   left: 120px;
 }
 
+.price-controls {
+  display: flex;
+  /* box-shadow: 0 0 0 3px black; */
+}
+
+.price-controls > label {
+  display: inline-block;
+  width: 50%;
+  /* box-shadow: 0 0 0 3px red; */
+  margin: 0;
+}
+
+.price-controls input {
+  /* font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136; */
+  /* Style for "до 5000" */
+  /* opacity: 0.2; */
+  color: #000000;
+  font-family: gilroylight;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  width: 50px;
+  background-color: transparent;
+  border: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1377,7 +1418,7 @@ td:nth-child(2) {
   margin-bottom: 39px;
 }
 
-.filter-form label {
+.filter-option-list label {
   margin-left: 40px;
   position: relative;
   cursor: pointer;
