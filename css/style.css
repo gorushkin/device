@@ -22,6 +22,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #000000;
   letter-spacing: 0.15px;
+  min-width: 1160px;
 
   background-color: #ffffff;
 }
