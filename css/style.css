@@ -977,12 +977,21 @@ td:nth-child(2) {
 
 .footer-user-navigation {
   padding-top: 3px;
-  box-shadow: 0 0 0 3px red;
+  /* box-shadow: 0 0 0 3px red; */
 }
 
 .footer-user-navigation li:first-child {
-  padding-right: 5px;
+  /* padding-right: 5px; */
   position: relative;
+}
+
+.footer-user-navigation ul {
+  /* box-shadow: 0 0 0 3px green; */
+}
+
+.footer-user-navigation a.min-gap {
+  margin-left: 15px;
+  /* opacity: 0.3; */
 }
 
 .main-footer .user::before {
