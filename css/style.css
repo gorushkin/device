@@ -13,13 +13,13 @@
   src: url("../fonts/gilroyextrabold.woff2") format("woff2");
 }
 
+
 body {
   margin: 0;
   padding: 0;
 
   font-size: 15px;
-  /* line-height: 30px; */
-  font-family: open_sanslight;
+  font-family: 'Open Sans', sans-serif;
   color: #000000;
   letter-spacing: 0.15px;
   min-width: 1160px;
@@ -324,7 +324,8 @@ input[type="radio"].visually-hidden {
 
 .main-catalog-menu a {
   color: #000000;
-  font-family: "open_sanslight";
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   font-size: 15px;
   font-weight: 300;
   line-height: 36px;
@@ -1242,12 +1243,7 @@ td:nth-child(2) {
 
 .sort-box-list.sort-type a {
   color: #000000;
-<<<<<<< HEAD
   font-family: 'Open Sans', sans-serif;
-=======
-  font-family: "open_sanslight";
-  font-size: 14px;
->>>>>>> master
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -1555,7 +1551,8 @@ label:active::before {
   display: block;
   opacity: 0.5;
   color: #000000;
-  font-family: "open_sanslight";
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   font-size: 13px;
   font-weight: 300;
   line-height: 36px;
@@ -1775,11 +1772,7 @@ label:active::before {
 .write-to-us-item textarea::placeholder {
   opacity: 0.4;
   color: #464646;
-<<<<<<< HEAD
   font-family: 'Open Sans', sans-serif;
-=======
-  font-family: "open_sanslight";
->>>>>>> master
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
