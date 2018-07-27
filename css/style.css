@@ -1,18 +1,18 @@
 @font-face {
-  font-weight: normal;
-  font-family: "gilroyextrabold";
+  font-family: "Gilroy";  
   font-style: normal;
-
-  src: url("../fonts/gilroyextrabold-webfont.woff2") format("woff2");
+  font-weight: normal;
+  src: url("../fonts/gilroylight-webfont.woff2") format("woff2");
 }
 
 @font-face {
-  font-weight: normal;
-  font-family: "gilroylight";
+  font-family: "Gilroy";  
   font-style: normal;
+  font-weight: bold;
 
-  src: url("../fonts/gilroylight-webfont.woff2") format("woff2");
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2");
 }
+
 
 body {
   margin: 0;
@@ -90,7 +90,8 @@ input[type="radio"].visually-hidden {
 .logo-title {
   font-size: 48px;
   line-height: 48px;
-  font-family: gilroyextrabold;
+  font-family: Gilroy;
+  font-weight: bold;
   letter-spacing: 0.26px;
   margin: 0;
   padding: 0;
@@ -267,7 +268,8 @@ input[type="radio"].visually-hidden {
 .catalog-menu-title {
   font-size: 18px;
   line-height: 20px;
-  font-family: gilroyextrabold;
+  font-family: Gilroy;
+  font-weight: bold;
   color: #000000;
   margin: 0;
   padding: 0;
@@ -349,7 +351,8 @@ input[type="radio"].visually-hidden {
 .site-navigation a {
   font-size: 18px;
   /* line-height: 24px; */
-  font-family: gilroyextrabold;
+  font-family: Gilroy;
+  font-weight: bold;
   color: #000000;
   letter-spacing: 3.6px;
   text-transform: uppercase;
@@ -443,7 +446,8 @@ input[type="radio"].visually-hidden {
 .product-promo-title {
   font-size: 47px;
   line-height: 56px;
-  font-family: gilroyextrabold;
+  font-family: Gilroy;
+  font-weight: bold;
   letter-spacing: 0.8px;
   margin-bottom: 18px;
   width: 510px;
@@ -454,7 +458,8 @@ input[type="radio"].visually-hidden {
 .product-number {
   font-size: 179px;
   line-height: 179.2px;
-  font-family: gilroyextrabold;
+  font-family: Gilroy;
+  font-weight: bold;
   color: #ffffff;
   letter-spacing: 0.36px;
   position: absolute;
@@ -494,7 +499,8 @@ input[type="radio"].visually-hidden {
   width: 220px;
   min-height: 40px;
   /* vertical-align: middle; */
-  font-family: gilroyextrabold;
+  font-family: Gilroy;
+  font-weight: bold;
   color: #000000;
   text-align: center;
   text-transform: uppercase;
@@ -588,7 +594,7 @@ td:nth-child(2) {
 .product-specs-list td {
   font-size: 36px;
   line-height: 48px;
-  font-family: gilroylight;
+  font-family: Gilroy;
   letter-spacing: 0.36px;
   font-weight: 300;
 
@@ -597,7 +603,7 @@ td:nth-child(2) {
 .product-specs-list th {
   font-size: 13px;
   line-height: 20px;
-  font-family: gilroylight;
+  font-family: Gilroy;
   color: #464646;
   letter-spacing: 0.13px;
 }
@@ -624,7 +630,8 @@ td:nth-child(2) {
 .item-title {
   font-size: 18px;
   line-height: 24px;
-  font-family: gilroyextrabold;
+  font-family: Gilroy;
+  font-weight: bold;
   color: #000000;
   letter-spacing: 0.18px;
   width: 160px;
@@ -757,7 +764,8 @@ td:nth-child(2) {
 .feature-title {
   font-size: 47px;
   line-height: 48px;
-  font-family: gilroyextrabold;
+  font-family: Gilroy;
+  font-weight: bold;
   color: #000000;
   letter-spacing: 1.21px;
   margin: 0;
@@ -837,7 +845,8 @@ td:nth-child(2) {
 .information-title {
   font-size: 47px;
   line-height: 48px;
-  font-family: gilroyextrabold;
+  font-family: Gilroy;
+  font-weight: bold;
   color: #000000;
   letter-spacing: 0.1px;
   margin: 0;
@@ -892,7 +901,8 @@ td:nth-child(2) {
 .delivery-item {
   font-size: 16px;
   line-height: 40px;
-  font-family: gilroyextrabold;
+  font-family: Gilroy;
+  font-weight: bold;
   color: #000000;
   letter-spacing: 0.21px;
 }
@@ -1147,7 +1157,8 @@ td:nth-child(2) {
 .section-title{
   margin: 0;
   padding: 0;
-  font-family: gilroyextrabold;
+  font-family: Gilroy;
+  font-weight: bold;
   font-size: 47px;
   font-weight: 400;
   line-height: 48px;
@@ -1200,7 +1211,8 @@ td:nth-child(2) {
 
 .column-title {
   color: #000000;
-  font-family: "gilroyextrabold";
+  font-family: Gilroy;
+  font-weight: bold;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -1355,7 +1367,7 @@ td:nth-child(2) {
 .price-controls label {
   display: inline-block;
   margin: 0;
-  font-family: gilroylight;
+  font-family: Gilroy;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -1365,7 +1377,7 @@ td:nth-child(2) {
 
 .price-controls input {
   color: #000000;
-  font-family: gilroylight;
+  font-family: Gilroy;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -1397,7 +1409,8 @@ fieldset.bluetooth {
   width: 93px;
   height: 12px;
   color: #000000;
-  font-family: gilroyextrabold;
+  font-family: Gilroy;
+  font-weight: bold;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -1471,21 +1484,13 @@ label:active::before {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* padding-left: 70px; */
   padding-top: 69px;
-  /* margin-bottom: 15px; */
 }
 
 .catalog-item {
   width: 360px;
   position: relative;
   margin-bottom: 46px;
-  /* box-shadow: 0 0 0 3px blue;; */
-}
-
-.catalog-item img {
-  background-color: red;
-  /* display: block; */
 }
 
 .catalog-item-info {
@@ -1497,11 +1502,11 @@ label:active::before {
 .catalog-item-title {
   display: inline-block;
   width: 260px;
-  font-family: gilroyextrabold;
+  font-family: Gilroy;
+  font-weight: bold;
   font-size: 18px;
   margin: 0;
   padding: 0;
-  font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.18px;
   color: #000000;
@@ -1509,7 +1514,7 @@ label:active::before {
 
 .catalog-item-price {
   color: #464646;
-  font-family: gilroylight;
+  font-family: Gilroy;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -1607,7 +1612,8 @@ label:active::before {
 
 .paginator-button {
   color: #000000;
-  font-family: "gilroyextrabold";
+  font-family: Gilroy;
+  font-weight: bold;
   font-size: 16px;
   font-weight: 400;
   line-height: 70px;
@@ -1710,7 +1716,8 @@ label:active::before {
 .write-to-us label {
   display: block;
   color: #000000;
-  font-family: "gilroyextrabold";
+  font-family: Gilroy;
+  font-weight: bold;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
