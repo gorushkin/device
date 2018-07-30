@@ -19,7 +19,7 @@ body {
   padding: 0;
 
   font-size: 15px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   color: #000000;
   letter-spacing: 0.15px;
   min-width: 1160px;
@@ -90,7 +90,7 @@ input[type="radio"].visually-hidden {
 .logo-title {
   font-size: 48px;
   line-height: 48px;
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: bold;
   letter-spacing: 0.26px;
   margin: 0;
@@ -268,7 +268,7 @@ input[type="radio"].visually-hidden {
 .catalog-menu-title {
   font-size: 18px;
   line-height: 20px;
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: bold;
   color: #000000;
   margin: 0;
@@ -324,7 +324,7 @@ input[type="radio"].visually-hidden {
 
 .main-catalog-menu a {
   color: #000000;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
   font-weight: 300;
@@ -351,7 +351,7 @@ input[type="radio"].visually-hidden {
 .site-navigation a {
   font-size: 18px;
   /* line-height: 24px; */
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: bold;
   color: #000000;
   letter-spacing: 3.6px;
@@ -446,7 +446,7 @@ input[type="radio"].visually-hidden {
 .product-promo-title {
   font-size: 47px;
   line-height: 56px;
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: bold;
   letter-spacing: 0.8px;
   margin-bottom: 18px;
@@ -458,7 +458,7 @@ input[type="radio"].visually-hidden {
 .product-number {
   font-size: 179px;
   line-height: 179.2px;
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: bold;
   color: #ffffff;
   letter-spacing: 0.36px;
@@ -479,7 +479,7 @@ input[type="radio"].visually-hidden {
 }
 
 .product-info {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 300;
   color: #464646;
   margin-bottom: 43px;
@@ -498,7 +498,7 @@ input[type="radio"].visually-hidden {
   line-height: 40px;
   width: 220px;
   min-height: 40px;
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: bold;
   color: #000000;
   text-align: center;
@@ -593,7 +593,7 @@ td:nth-child(2) {
 .product-specs-list td {
   font-size: 36px;
   line-height: 48px;
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   letter-spacing: 0.36px;
   font-weight: 300;
 
@@ -602,7 +602,7 @@ td:nth-child(2) {
 .product-specs-list th {
   font-size: 13px;
   line-height: 20px;
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   color: #464646;
   letter-spacing: 0.13px;
 }
@@ -629,7 +629,7 @@ td:nth-child(2) {
 .item-title {
   font-size: 18px;
   line-height: 24px;
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: bold;
   color: #000000;
   letter-spacing: 0.18px;
@@ -763,7 +763,7 @@ td:nth-child(2) {
 .feature-title {
   font-size: 47px;
   line-height: 48px;
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: bold;
   color: #000000;
   letter-spacing: 1.21px;
@@ -844,7 +844,7 @@ td:nth-child(2) {
 .information-title {
   font-size: 47px;
   line-height: 48px;
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: bold;
   color: #000000;
   letter-spacing: 0.1px;
@@ -865,7 +865,7 @@ td:nth-child(2) {
 }
 
 .information-text {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 300;
   color: #464646;
   line-height: 30px;
@@ -900,7 +900,7 @@ td:nth-child(2) {
 .delivery-item {
   font-size: 16px;
   line-height: 40px;
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: bold;
   color: #000000;
   letter-spacing: 0.21px;
@@ -1156,7 +1156,7 @@ td:nth-child(2) {
 .section-title{
   margin: 0;
   padding: 0;
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: bold;
   font-size: 47px;
   line-height: 48px;
@@ -1209,7 +1209,7 @@ td:nth-child(2) {
 
 .column-title {
   color: #000000;
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
@@ -1242,7 +1242,7 @@ td:nth-child(2) {
 
 .sort-box-list.sort-type a {
   color: #000000;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -1363,7 +1363,7 @@ td:nth-child(2) {
 .price-controls label {
   display: inline-block;
   margin: 0;
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -1373,7 +1373,7 @@ td:nth-child(2) {
 
 .price-controls input {
   color: #000000;
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -1405,7 +1405,7 @@ fieldset.bluetooth {
   width: 93px;
   height: 12px;
   color: #000000;
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
@@ -1418,7 +1418,7 @@ fieldset.bluetooth {
   margin-left: 40px;
   position: relative;
   cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 14px;
@@ -1497,7 +1497,7 @@ label:active::before {
 .catalog-item-title {
   display: inline-block;
   width: 260px;
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
   margin: 0;
@@ -1509,7 +1509,7 @@ label:active::before {
 
 .catalog-item-price {
   color: #464646;
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -1550,7 +1550,7 @@ label:active::before {
   display: block;
   opacity: 0.5;
   color: #000000;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 300;
   font-size: 13px;
   font-weight: 300;
@@ -1607,7 +1607,7 @@ label:active::before {
 
 .paginator-button {
   color: #000000;
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 70px;
@@ -1710,7 +1710,7 @@ label:active::before {
 .write-to-us label {
   display: block;
   color: #000000;
-  font-family: Gilroy;
+  font-family: Gilroy, Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
@@ -1771,7 +1771,7 @@ label:active::before {
 .write-to-us-item textarea::placeholder {
   opacity: 0.4;
   color: #464646;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
