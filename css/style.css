@@ -164,7 +164,7 @@ input[type="radio"].visually-hidden {
   margin-left: -5px;
 }
 
-.search-form-button:hover {
+.search-input:focus + .search-form-button:hover {
   background-color: #000000;
   color: rgba(255,255,255, 1);
   opacity: 1;
